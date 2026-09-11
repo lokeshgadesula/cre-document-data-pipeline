@@ -1,0 +1,24 @@
+[build-system]
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+
+[project]
+name="cre-document-data-pipeline"
+version="0.1.0"
+description="Synthetic commercial real-estate document ingestion, validation, reconciliation, and public-record enrichment pipeline"
+requires-python=">=3.11"
+dependencies=["pydantic>=2.6","openpyxl>=3.1","pandas>=2.0","sqlalchemy>=2.0","beautifulsoup4>=4.12","httpx>=0.27"]
+
+[project.optional-dependencies]
+dev=["pytest>=8","ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where=["src"]
+
+[tool.pytest.ini_options]
+pythonpath=["src"]
+testpaths=["tests"]
+
+[tool.ruff]
+line-length=100
+target-version="py311"
