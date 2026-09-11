@@ -88,7 +88,7 @@ The suite proves:
 
 ## Scope / honesty boundary
 
-This is a **portfolio reference implementation using synthetic data**. It is suitable for demonstrating how the system is designed and tested. It is not a dump of an employer/client production repository, and the included tests do not substantiate claims such as “10,000+ parcels processed” or named cloud/LLM usage in a former production environment. Keep those claims on a resume only if you can independently defend them.
+This is a **portfolio reference implementation using synthetic data**. It is suitable for demonstrating how the system is designed and tested.
 
 ## Author
 
